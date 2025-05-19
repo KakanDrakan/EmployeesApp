@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
+	<title>@ViewBag.Title</title>
+</head>
+<body>
+	<header>
+		<h1>Employees</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a asp-controller="Employees" asp-action="Index">Employees</a></li>
+			<li><a asp-controller="Employees" asp-action="Create">Create Employee</a></li>
+		</ul>
+	</nav>
+	<div>
+		@RenderBody()
+	</div>
+	<footer>&copy; Grupp 6</footer>
+</body>
+</html>

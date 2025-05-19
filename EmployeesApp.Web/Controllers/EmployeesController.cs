@@ -13,9 +13,6 @@ namespace EmployeesApp.Web.Controllers
         {
             var model = service.GetAll();
 
-            //foreach (var emp in model)
-            //    Console.WriteLine($"{emp.Name}: {emp.Id}");
-
             return View(model);
         }
 
