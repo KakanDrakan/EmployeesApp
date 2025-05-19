@@ -1,1 +1,17 @@
-﻿@DateTime.Now.ToShortTimeString()
+﻿<main>
+    <article>
+        <h2>Current Time</h2>
+        <p id="clock" aria-live="polite" style="font-size: 1.5rem; font-weight: bold;"></p>
+    </article>
+</main>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
